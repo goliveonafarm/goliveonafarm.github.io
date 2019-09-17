@@ -1,5 +1,6 @@
 body{
     background-image: url("milkyWay.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -29,8 +30,20 @@ body{
 }
 
 .navbar-nav > li > a {
-    padding-top:5px !important; 
-    padding-bottom:5px !important;}
+    padding-top:5px; 
+    padding-bottom:5px;}
+
 .navbar {
-    min-height:100px !important
+    min-height:100px;
+}
+
+.myLayer {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
 }
