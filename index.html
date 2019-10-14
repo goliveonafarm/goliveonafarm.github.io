@@ -9,139 +9,150 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://bootswatch.com/4/darkly/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://bootswatch.com/4/cosmo/bootstrap.css" rel="stylesheet" type="text/css">
   <!-- End Bootstrap CSS -->
   <!-- FontAwesome CSS -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- End Bootstrap CSS -->
 
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+  <!-- End Google fonts -->
+
   <!-- My CSS-->
   <link rel="stylesheet" href="myStyles.css">
   <!-- End CSS-->
 
-  <title>Hello, world!</title>
+  <title>John Coburn Dev Portfolio - Home</title>
 </head>
 
 <body>
-
-  <!-- This is the old nav -->
-  <!-- <div class="container">
-    <nav class="nav ">
-
-      <div class="justify-content-start">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutMe.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/goliveonafarm" target="_blank"><i
-                class="fa fa-github-square"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/john-coburn-895395177/" target="_blank"><i
-                class="fa fa-linkedin-square"></i></a>
-          </li>
-        </ul>
-    </nav>
-  </div> -->
-
-  <div class="container">
-    <!--Start Container-->
-
-    <nav class="navbar navbar-expand-md navbar-light ">
-
-      <a class="navbar-brand nav-link" href="index.html">Home</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="aboutMe.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="https://github.com/goliveonafarm">
-              <i class="fa fa-github-square"></i>
-            </a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="https://www.linkedin.com/in/john-coburn-895395177/">
-              <i class="fa fa-linkedin-square"></i>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
-
-  </div><!-- End Container-->
-
-  <div class="jumbotron">
+  <!-- Top Banner md - Jumbotron - Display only when screen is >= md -->
+  <div class="jumbotron-fluid myImgJumbo d-none d-md-block">
     <div class="container">
-      <h1>Welcome to my portfolio!</h1>
-      <p>This page was designed using bootstrap mobile first approach</p>
+      <div class="row">
+        <div class="col-xs-4 offset-lg-1">
+          <h1 class="display-1 jumbotronFont fontAmatic">Welcome to my portfolio</h1>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Top Banner md -->
+
+  <!-- Navbar -->
+  <div class="container-fluid bg-dark marginBottom" data-spy="affix" data-offset-top="30">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+
+        <a class="navbar-brand" href="index.html">Home</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/goliveonafarm" target="_blank">
+                <i class="fa fa-github-square"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/john-coburn-895395177/" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
+  <!-- End Navbar-->
+
+  <!-- Top Banner sm - Jumbotron - display only when screen is < md -->
+  <div class="jumbotron d-md-none">
+    <div class="container">
+      <h1>Welcome to my portfolio</h1>
+    </div>
+  </div><!-- End Top Banner sm -->
 
   <div class="container">
+    <!-- Card deck -->
+    <div class="card-deck">
 
-    <div class="row">
-      <!-- New Row -->
-      <div class="col-xs-12 col-md-6">
-        <!-- New Column1 -->
-        <div class="card">
-          <img src="mapPage.png" class="card-img-top" />
-          <div class="card-block">
-            <h3 class="card-title">UFO Sighting Map</h3>
-            <p>Allows users to submit UFO sightings and displays submissions in google maps.</p>
-          </div>
-          <div class="card-body">
-            <a href="http://goliveonafarm-001-site1.itempurl.com/Home/UFOIndex" class="card-link">
+      <div class="card bg-primary">
+        <img src="musicPage.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Current project-</h1>
+            <h5 class="card-title">eLearnMusic</h5>
+            <p class="card-text">This site will allow users to schedule a live music lesson through the website</p>
+            <p class="card-text"><small>No features have been implemented yet but I am learning webRTC and
+                node.js</small></p>
+            <a href="https://goliveonafarm.github.io/MusicWebsite/about.html" class="card-link" target="_blank">
+              <button type="button" class="btn btn-info">Hosted</button>
+            </a>
+            <a href="https://github.com/goliveonafarm/MusicWebsite" class="card-link" target="_blank">
+              <button type="button" class="btn btn-success">Code</button>
+            </a>
+        </div>
+      </div>
+
+      <div class="card bg-success">
+        <img src="mapPage.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">UFO Sightings Map</h5>
+          <p class="card-text">Lets users submit UFO sightings and displays them in a google maps API</p>
+          <p class="card-text">C# ASP.NET</p>
+          <div class="cardButtonPosition">
+            <a href="http://goliveonafarm-001-site1.itempurl.com/Home/UFOIndex" class="card-link" target="_blank">
               <button type="button" class="btn btn-info">Hosted</button>
             </a>
           </div>
         </div>
-      </div><!-- End Column1 -->
-      <!-- New Column2 -->
-      <div class="col-xs-12 col-md-6">
-        <div class="card">
-          <img src="gamePage.png" class="card-img-top" />
-          <div class="card-block">
+      </div>
 
-            <h3 class="card-title">JavaScript Game</h3>
-            <p>Vanilla JavaScript dungeon crawler. Uses DOM manipulation and CSS.</p>
-          </div>
-          <div class="card-body">
-            <a href="https://goliveonafarm.github.io/TunnelGame/" class="card-link">
+      <div class="card bg-warning">
+        <img src="gamePage.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript Game</h5>
+          <p class="card-text">Demo I threw together while learning JavaScript.</p>
+          <p class="card-text">JavaScript ES6</p>
+          <div class="cardButtonPosition">
+            <a href="https://goliveonafarm.github.io/TunnelGame/" class="card-link" target="_blank">
               <button type="button" class="btn btn-info">Hosted</button>
             </a>
-            <a href="https://github.com/goliveonafarm/TunnelGame" class="card-link">
+            <a href="https://github.com/goliveonafarm/TunnelGame" class="card-link" target="_blank">
               <button type="button" class="btn btn-success">Code</button>
             </a>
           </div>
         </div>
-      </div><!-- End Column2 -->
-    </div><!-- End Row -->
+      </div>
 
-  </div>
+    </div>
+  </div><!-- End Card deck -->
+
+  <br>
   <div class="container">
-    <hr>
-    <p>John Coburn</p>
+    <p>You can <a href="https://github.com/goliveonafarm/goliveonafarm.github.io" target="_blank">view the code for this
+        site by clicking here</a></p>
   </div>
+
+  <footer class="py-1 fixed-bottom bg-dark text-white-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-right">
+          <small>&copy; John Coburn</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
