@@ -1,14 +1,76 @@
-/*Override bootstrap*/
+html,body{
+    margin-bottom: 20px;
+    overflow-x: hidden;
+}
+
+footer{
+    position: absolute;
+    display: block;
+}
+
+.topMargin{
+    margin-top: 40px;
+}
+
 hr{
     border-top: 1px solid white;
 }
 
-a{
+.myImg{
+    position:absolute;
+    top:50px;
+    width: 100%;
+}
+
+.grayScale{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);  
+}
+
+.fontAmatic{
+    font-family: 'Amatic SC', cursive;
+}
+
+.marginBottom{
+    margin-bottom: 30px;
+}
+
+.marginBottomResumeNav{
+    margin-bottom: 2px;
+}
+
+/*Override bootstrap*/
+.card-deck{
     color:white;
 }
+
+.d-md-none{
+    margin-top: 10px;
+}
+
+.jumbotronFont{
+    color:white;
+    text-shadow: 2px 2px black;
+    margin-top: 90px;
+}
+
+.myImgJumbo{
+    background-image:url('milkyWay.jpg');
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myImgJumbo2{
+    background-image:url('cityNight.jpg');
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* font-awesome icons */
 .fa {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .fa:hover {
@@ -33,4 +95,79 @@ a{
 /*mobiles*/
 @media screen and (max-width: 480px){
     
+}
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+@media only screen 
+and (min-width: 576px){
+
+    .cardButtonPosition{
+        position: absolute;
+        bottom: 20px;
+    }
+
 }
